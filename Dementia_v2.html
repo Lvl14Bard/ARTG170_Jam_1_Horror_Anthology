@@ -88,7 +88,7 @@ Actually, you think it&#39;s getting pretty close to the time you set for that d
 (text-style:&quot;emboss&quot;)[There she is. She... looks older. Familiar, though - still beautiful, she always was. You miss her. You&#39;re not sure why, she&#39;s right in front of you, but... it&#39;s such a strange feeling. A longing, almost. 
 
 Alyssa greets you enthusiastically, her face is wrinkled and her hair is graying... it shouldn&#39;t be. Or should it? You&#39;re not sure.
-	[[&#39;&#39;&quot;What date is this now...?&quot;&#39;&#39;|Mem_1.2]] or smth along those lines
+	[[&#39;&#39;&quot;What date is this now...?&quot;&#39;&#39;|Mem_1.2]]
 	[[&#39;&#39;&quot;I&#39;m sorry, was I late?&quot;&#39;&#39;|Mem_1.3]]
 	]
 
@@ -832,7 +832,7 @@ That&#39;s... that&#39;s weird, though. You should&#39;ve gotten that one.
 
 (set: $panic to it +1)
 *Panic has gone up*
-(if:$panic &gt; 13)([go-to: &quot;End&quot;])
+(if:$panic &gt; 13)[([go-to: &quot;End&quot;])]
 ]
 [
 (if:$panic &lt; 5)[(text-style:&quot;blur&quot;,&quot;fade-in-out&quot;)[- at peace -]](else-if:$panic &gt; 8)[(text-style:&quot;blur&quot;,&quot;blink&quot;)[- &#39;&#39;panicking&#39;&#39; -]](else:)[(text-style:&quot;blur&quot;,&quot;fade-in-out&quot;)[- &#39;&#39;unsettled&#39;&#39; -]]
