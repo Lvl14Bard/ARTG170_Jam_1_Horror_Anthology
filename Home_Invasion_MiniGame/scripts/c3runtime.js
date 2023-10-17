@@ -4005,15 +4005,19 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite,
 		C3.Plugins.Mouse,
 		C3.Plugins.Mouse.Cnds.OnClick,
-		C3.Plugins.System.Cnds.CompareTime,
+		C3.Plugins.Mouse.Cnds.IsOverObject,
+		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.TiledBg.Acts.SetVisible,
 		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.Sprite.Cnds.IsVisible,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Sprite.Acts.SetAngle,
-		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Sprite.Cnds.CompareX,
 		C3.Plugins.Sprite.Cnds.CompareY,
-		C3.Plugins.Sprite.Cnds.IsBetweenAngles
+		C3.Plugins.Sprite.Cnds.IsBetweenAngles,
+		C3.Plugins.System.Acts.RemoveLayer,
+		C3.Plugins.System.Acts.SetLayerVisible
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4025,7 +4029,18 @@ self.C3_JsPropNameTable = [
 	{TiledBackground: 0},
 	{Text1: 0},
 	{Text2: 0},
-	{Painting: 0}
+	{Painting: 0},
+	{TiledBackground2: 0},
+	{Pot: 0},
+	{Spoon: 0},
+	{Knife: 0},
+	{Arrow: 0},
+	{Text3: 0},
+	{Text4: 0},
+	{Text5: 0},
+	{Tutorial1: 0},
+	{Tutorial2: 0},
+	{EventCounter: 0}
 ];
 }
 
@@ -4126,22 +4141,45 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
+		() => 0,
+		() => 1,
 		() => 2,
-		() => 3,
 		() => 1512,
 		() => 831,
 		() => 757,
 		() => 676,
 		() => 35,
 		() => 25,
+		() => 3,
 		() => 4,
 		() => 1024,
 		() => 640,
 		() => 896,
 		() => 576,
-		() => 0,
-		() => 1,
-		() => 5
+		() => "Layer 1",
+		() => 1536,
+		() => 487,
+		() => 5,
+		() => 6,
+		() => 7,
+		() => 8,
+		() => 614,
+		() => 480,
+		() => 215.9,
+		() => 650,
+		() => 520,
+		() => 170,
+		() => 285,
+		() => 430,
+		() => 1383,
+		() => 436,
+		() => 9,
+		() => 10,
+		() => 992,
+		() => 320,
+		() => 448,
+		() => 88,
+		() => 536
 ];
 
 
